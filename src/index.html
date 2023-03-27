@@ -30,47 +30,21 @@
 
 <body>
   <div class="container-md mb-3">
-    <input class="form-control" type="file" id="formFileMultiple" accept=".ics" multiple>
+    <input class="form-control" type="file" id="fileInput" accept=".ics" multiple>
   </div>
-  <h1>
 
-  </h1>
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border mb-3 collapse" role="status" id="spinner" style="width: 4rem; height: 4rem;">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <h1 class="mb-3 text-danger collapse" role="status" id="errorText">Error loading files!</h1>
+  </div>
 
   <!-- Dateien / Module auswahl Übersicht -->
-  <div id="fileList" class="container-md">
-  </div>
+  <div class="text-center container-md mb-3" id="fileList">
 
-
-  <div class="mb-3 container-md">
-    <div class="container text-center">
-      <div class="row align-items-start">
-        <div class="col rounded-start" style="background-color: #3788d8;color: black;">
-          Vorlesung
-        </div>
-        <div class="col" style="background-color: #ede99d; color: black;">
-          Übung
-        </div>
-        <div class="col" style="background-color: #5a228b; color: #fff;">
-          Praktikum
-        </div>
-        <div class="col rounded-end" style="background-color: #d2c2d1; color: black;">
-          Andere
-        </div>
-      </div>
-    </div>
   </div>
   <div id='calendar' class="mb-3"></div>
-
-  <div class="card container-md mb-3">
-    <h5 class="card-header" data-bs-toggle="collapse" href="#file-${fileNr}-collapse" role="button">Konflikte</h5>
-    <div class="card-body collapse show" id="file-${fileNr}-collapse">
-      <p class="card-text">
-        Es wurden <b id="conflict-counter">0</b> Konflikte gefunden. Es werden nur zukünftige Termine beachtet!
-        <ul class="list-group" id="conflicts">
-        </ul>
-      </p>
-    </div>
-  </div>
 
 
   <footer class="text-center text-lg-start text-dark">
