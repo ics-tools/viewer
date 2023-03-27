@@ -6,8 +6,6 @@ import listPlugin from '@fullcalendar/list';
 import bootstrap5Plugin from '@fullcalendar/bootstrap5';
 import iCalendarPlugin from '@fullcalendar/icalendar'
 
-require('bootstrap');
-
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'; // webpack uses file-loader to handle font files
 import './index.css';
