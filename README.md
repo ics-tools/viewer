@@ -1,16 +1,21 @@
-# Stundenplan-Planungshilfe für Studierende der Technischen Hochschule Mittelhessen
+# ICS-Viewer
 
-Dieses Projekt ist eine Webseite, die Studierenden der Technischen Hochschule Mittelhessen bei der Planung ihres Stundenplans hilft. Mithilfe der Webseite können die Studierenden einzelne Module auswählen und ihren Stundenplan auf diese Weise zusammenstellen. Ein Kalender zeigt die ausgewählten Module an und markiert zeitliche Konflikte farblich.
+Dieses Projekt ist eine Webanwendung, die technische Kalenderdateien im iCalendar-Format (ICS-Dateien) einliest und diese in einem Kalender anzeigt. Die Anwendung verarbeitet die ICS-Dateien vollständig lokal, ohne dass die Daten an einen Server gesendet werden.
 
-Bitte beachten Sie, dass diese Webseite die Stundenplan Informationen lokal auf dem Computer des Benutzers verarbeitet und dass der Server nur die statischen Webseiteninhalte bereitstellt. Es werden keine Stundenplan Informationen an den Server gesendet oder von diesem empfangen. Die Verarbeitung erfolgt vollständig auf dem Computer des Benutzers.
+Die Webseite ist unter folgender URL erreichbar: https://viewer.ics.tools/
 
-Die Webseite ist unter folgender URL erreichbar: https://thm-planer.skillkiller.de/
+## Verwendung
+
+Um diese Anwendung zu verwenden, öffnen Sie die [Webseite](https://viewer.ics.tools/) in einem Webbrowser Ihrer Wahl. Sie können dann einzelne oder mehrere ICS-Dateien auswählen und sie werden in einem Kalender dargestellt. Sie können zwischen verschiedenen Ansichten des Kalenders wählen, um eine Tages-, Wochen- oder Monatsansicht zu sehen.
+
+## ICS-Dateien
+
+ICS steht für iCalendar, ein Standardformat für den Austausch von Kalenderdaten zwischen verschiedenen Anwendungen. Eine ICS-Datei enthält Termine und Ereignisse sowie Informationen wie den Namen des Ereignisses, den Ort, die Zeit und die Dauer. ICS-Dateien können auch wiederkehrende Ereignisse enthalten, die an bestimmten Tagen oder in bestimmten Intervallen stattfinden. ICS-Dateien können in verschiedenen Anwendungen verwendet werden, wie zum Beispiel in Microsoft Outlook, Apple iCal oder Google Kalender.
 
 ## Abhängigkeiten
 
 Das Projekt nutzt folgende wichtige Abhängigkeiten:
 
-- [ical.js](https://github.com/mozilla-comm/ical.js/): Eine JavaScript-Bibliothek zum Parsen von iCalendar-Dateien.
 - [Bootstrap](https://getbootstrap.com/): Ein CSS-Framework zum schnellen Entwickeln von responsiven Webseiten.
 - [FullCalendar](https://fullcalendar.io/): Eine JavaScript-Bibliothek zum Erstellen von interaktiven Kalendern.
 
