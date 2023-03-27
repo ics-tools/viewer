@@ -16,6 +16,7 @@
     "@fullcalendar/icalendar": "^6.1.5",
     "@fullcalendar/interaction": "^6.1.5",
     "@fullcalendar/list": "^6.1.5",
+    "@fullcalendar/multimonth": "^6.1.5",
     "@fullcalendar/timegrid": "^6.1.5",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3"
