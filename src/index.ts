@@ -3,6 +3,7 @@ import interactionPlugin from '@fullcalendar/interaction';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import listPlugin from '@fullcalendar/list';
+import multiMonthPlugin from '@fullcalendar/multimonth'
 import bootstrap5Plugin from '@fullcalendar/bootstrap5';
 import iCalendarPlugin from '@fullcalendar/icalendar'
 
@@ -112,11 +113,11 @@ document.addEventListener('DOMContentLoaded', function () {
   fileList = document.getElementById('fileList')!;
 
   calendar = new Calendar(calendarEl, {
-    plugins: [interactionPlugin, dayGridPlugin, timeGridPlugin, listPlugin, bootstrap5Plugin, iCalendarPlugin],
+    plugins: [interactionPlugin, dayGridPlugin, timeGridPlugin, listPlugin, multiMonthPlugin, bootstrap5Plugin, iCalendarPlugin],
     headerToolbar: {
       left: 'prev,next today',
       center: 'title',
-      right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+      right: 'multiMonthYear,dayGridMonth,timeGridWeek,timeGridDay,listMonth'
     },
     themeSystem: 'bootstrap5',
     navLinks: true,
